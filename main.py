@@ -27,6 +27,7 @@ tab_binaire = [bin(i)[2:] for i in tab_entiers]
 combinaisons = ["0" * (nbr_action - len(k)) + k for k in tab_binaire]
 cout_max = 500
 combinaisons_possible = []
+# on fait la liste de toutes les combinaisons possibles
 for combi in combinaisons:
     cout_combinaison = 0
     benefice_combinaison = 0
