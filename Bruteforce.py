@@ -34,6 +34,6 @@ liste_meilleur_investissement = []
 for i in range(len(meilleur_investissement)):
     if meilleur_investissement[i] == "1":
         liste_meilleur_investissement.append(tableau_actions[i]["Action"])
-print(liste_meilleur_investissement)
+print(sorted(liste_meilleur_investissement))
 fin = time.time()
 print(fin - debut)
