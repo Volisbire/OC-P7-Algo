@@ -1,0 +1,16 @@
+ouvre le CSV.
+
+lance le chrono.
+
+stock le dans un tableau trie par ordre décroissant.
+
+initialise le cout total a 0.
+initialise un tableau des meilleurs solutions.
+
+tant que le tableau a des occurences et tant que le cout total n'excede pas 500
+	on stock l'occurence et son cout
+	si le cout total + le cout de l'occurence ne dépasse pas 500
+		on l'ajoute au tableau des meilleurs solutions
+		on met a jour le cout total
+affiche la meilleur solution.
+affiche le chrono.

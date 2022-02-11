@@ -10,7 +10,7 @@ def benefice(actions_tab):
 
 
 tableau_actions = []
-with open("actions_feuille.csv", "r") as file:
+with open("dataset2_Python+P7.csv", "r") as file:
     reader = csv.reader(file, delimiter=',')
     next(reader)
 
@@ -33,7 +33,7 @@ i = 0
 while i < len(tableau_actions) and cout_total <= 500:
     action = sorted_tab[i]
     cout_action = action["cout"]
-    if cout_total + cout_action <= 500:
+    if cout_total + cout_action <= 500 and action["benefice"] != math.inf:
         meilleur_solution.append(action["Action"])
         cout_total = cout_total + cout_action
     i += 1

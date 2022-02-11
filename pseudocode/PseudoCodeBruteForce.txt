@@ -1,0 +1,61 @@
+ouvre le CSV et stock le dans une variable sous la forme d'une liste de dictionnaire.
+
+lance le chrono pour mesurer le temps d'éxécution de l'algorithme.
+récupére la taille de la liste obtenue.
+récupère un tableau qui stock le nombre de possibilité sous forme d'entier [0, 1, 2, ...]
+convertit chaque entier en binaire afin de garder une trace de tout ce qui a été tenté.
+ajoute les 0 manquant a chaque mot binaire (par exemple, si on ne choisit aucune action : 00000000000000000000) ainsi , toute les combinaisons sont référencées
+puis stock le dans un tableau "combinaisons"
+
+-----------
+1ere étape
+-----------
+référencement de toute les combinaisons possible =
+
+récupére le cout maximum.
+initialise un tableau des combinaisons possible (vide pour l'instant).
+
+pour chaque combinaison dans le tableau "combinaisons"
+	initialise le cout de la combinaison a 0
+	initilaise le benefice de la combinaison a  0
+	pour chaque unité de la taille de la liste obtenue
+		si le chiffre obtenu est égale a 1
+			met a jour le cout de la combinaison	
+			met a jour le benefice de la combinaison
+	si le cout de la combinaison n'excede pas le cout maximum
+		ajoute cette combinaison(cout, benefice)
+
+---------
+2nd étape
+---------
+recherche du meilleur investissement par algorithme de recherche du maximum =
+
+initialise deux variables temporaire (cout, benefice) au premier element du tableau combinaison possible
+pour chaque élément dans le tableau combinaison possible:
+	si l'élément a un plus grand benefice que les variables temp 
+		met a jour les variables temp
+
+----------
+3eme etape
+----------
+affichage de la liste optimal des actions choisies =
+
+initialise une liste des meilleurs investissements.
+pour chaque itération dans la taille total du tableau des meilleurs investissments
+	si l'itération == chiffre 1
+		ajoute a la liste des meilleurs investissements
+affiche la liste triée.
+met fin au chrono.
+affiche le chrono.
+
+
+
+
+
+
+
+
+
+
+
+
